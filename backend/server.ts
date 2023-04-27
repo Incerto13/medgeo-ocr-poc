@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import bodyParser, { text, urlencoded } from 'body-parser';
 import fs from 'fs'
 import { googleVisionClient } from './google-vision-client'
+import { cropImage } from './crop-image'
 
 dotenv.config();
 const cors = require('cors');
@@ -25,10 +26,10 @@ app.get('/', (req: Request, res: Response) => {
 
 app.post('/', async (req: Request, res: Response) => {
     console.log('received request')
-    // console.log((req.body))
     const { imageData } = req.body
+    const croppedImageData = await cropImage(imageData)
     const fileName = 'test-file.png'
-    fs.writeFile(fileName, imageData, {encoding: 'base64'},() => console.log('file written'))
+    fs.writeFile(fileName, croppedImageData, {encoding: 'base64'},() => console.log('file written'))
     const textAnnotations = await googleVisionClient(fileName)
     res.send(JSON.stringify(textAnnotations))
 });

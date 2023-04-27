@@ -3,7 +3,7 @@ import Camera from 'react-html5-camera-photo';
 import dataUriToBuffer from 'data-uri-to-buffer';
 import axios from 'axios';
 import { ViewFinderOverlayModal } from './ViewFinderOverlayModal'
-import './ViewFinderOverlayModal.css';
+import 'react-html5-camera-photo/build/css/index.css';
 
 
 function App (props: any) {
@@ -14,6 +14,7 @@ function App (props: any) {
 
     const base64Image = imgBuffer.toString('base64')
     // console.log(base64Image)
+    // console.log(base64Image.slice(0,50))
     await axios.post('http://localhost:8000', {
       imageData: base64Image
       }, {

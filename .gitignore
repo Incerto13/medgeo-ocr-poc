@@ -27,3 +27,6 @@ yarn-error.log*
 
 # google cloud credentials
 service_account_creds.json
+
+# test image
+/backend/test-file.png
