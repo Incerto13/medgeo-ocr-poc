@@ -1,4 +1,4 @@
-# BetterID
+# OCR POC
 ### MedGEO OCR Scan Proof of Concept
   
 #### Getting started
@@ -10,6 +10,7 @@
 
 ```
 $ npm install
+$ npm start
 ```
 
 Then navigate to `localhost:3000` to start using the app
