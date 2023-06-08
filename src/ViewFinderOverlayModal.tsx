@@ -28,19 +28,19 @@ export const ViewFinderOverlayModal = () => {
             }}
         >
         </div>
-        {/* <div
+        <div
             // bottom
             className='backdrop'
             style={{
-                top: '50%',
+                top: '40.5%',
                 left: '30%',
                 position: 'fixed',
-                height: '50%',
+                height: '60%',
                 width: '40%',
                 zIndex: '50',  
             }}
         >
-        </div> */}
+        </div>
         <div
             // right
             className='backdrop'
@@ -61,9 +61,9 @@ export const ViewFinderOverlayModal = () => {
                 left: '30%',
                 position: 'fixed',
                 borderStyle: 'solid',
-                borderColor: 'green',
+                borderColor: 'white',
                 borderWidth: '2px',
-                height: '25%',
+                height: '15%',
                 width: '39.8%',
                 zIndex: '100',  
             }}
