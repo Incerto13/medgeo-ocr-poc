@@ -1,0 +1,15 @@
+.paperModalContent {
+    display: flex;
+  }
+  
+  .paperModalMessage {
+    line-height: 1.313;
+  }
+  
+  .loadingButtonContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+  

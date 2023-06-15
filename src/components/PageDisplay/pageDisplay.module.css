@@ -1,0 +1,8 @@
+.pageDisplay {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 468px; /* orig: 768 */
+  padding: 1.5em;
+  position: relative;
+}
