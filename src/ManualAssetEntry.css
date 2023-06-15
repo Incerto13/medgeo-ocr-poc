@@ -13,3 +13,10 @@
     white-space: nowrap;
   }
   
+  .ocr-enabled-field {
+    display: flex;
+  }
+
+  .ocr-btn {
+    height: 1em;
+  }
